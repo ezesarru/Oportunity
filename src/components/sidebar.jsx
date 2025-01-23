@@ -7,13 +7,13 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <nav className="mr-8">
-      <h1 className="text-3xl font-bold mb-3">
+    <nav className="border-2 border-blue-600">
+      <h1 className="text-4xl font-bold mb-[10%]">
         Ezequiel
         <br />
         Sarrugeri
       </h1>
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 text-lg">
         <li>
           <Link
             href="/"
