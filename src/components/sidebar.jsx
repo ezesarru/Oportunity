@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import useStore from "../store";
 
 export default function Sidebar({ contactClick }) {
   const pathname = usePathname();
+
+  const handleContact = useStore((state) => state.handleContact);
 
   return (
     <nav className="border-4 border-blue-600">
@@ -40,7 +43,7 @@ export default function Sidebar({ contactClick }) {
         </li>
         <li>
           <button
-            onClick={contactClick}
+            onClick={handleContact}
             className="underline decoration-red-500 underline-offset-4 font-bold" //! Añadir CSS para que sea diferente
           >
             Contact

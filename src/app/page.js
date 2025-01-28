@@ -2,14 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import useStore from "../store";
 
 export default function Page() {
-  const [showContact, setShowContact] = useState(false);
-
-  const handleContact = () => {
-    setShowContact(!showContact);
-  };
+  const showContact = useStore((state) => state.showContact);
 
   return (
     <div className="border-4 border-orange-500 w-[95%] mx-auto flex flex-col items-center">
