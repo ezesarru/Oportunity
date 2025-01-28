@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Sidebar() {
+export default function Sidebar({ contactClick }) {
   const pathname = usePathname();
 
   return (
-    <nav className="border-2 border-blue-600">
+    <nav className="border-4 border-blue-600">
       <h1 className="text-4xl font-bold mb-[10%]">
         Ezequiel
         <br />
@@ -28,18 +28,6 @@ export default function Sidebar() {
         </li>
         <li>
           <Link
-            href="/contact"
-            className={
-              pathname === "/contact"
-                ? "underline decoration-yellow-300 underline-offset-4 font-bold"
-                : ""
-            }
-          >
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link
             href="/blog"
             className={
               pathname === "/blog"
@@ -51,7 +39,20 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link href="/resume.pdf">Resume</Link>
+          <button
+            onClick={contactClick}
+            className="underline decoration-red-500 underline-offset-4 font-bold" //! Añadir CSS para que sea diferente
+          >
+            Contact
+          </button>
+        </li>
+        <li>
+          <Link
+            className="underline decoration-red-500 underline-offset-4 font-bold"
+            href="/resume.pdf"
+          >
+            Resume
+          </Link>
         </li>
       </ul>
     </nav>

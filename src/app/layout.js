@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="border-4 border-red-500 flex flex-row justify-between my-[5%] w-[55%] mx-auto">
+        <div className="border-2 border-red-500 my-[5%] w-[60%] mx-auto flex justify-center">
           <Sidebar />
           {children}
         </div>
