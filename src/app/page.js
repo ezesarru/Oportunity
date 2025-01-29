@@ -8,8 +8,8 @@ export default function Page() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <div className="border-4 border-orange-500 w-[95%] mx-auto flex flex-col items-center">
-      <div className="flex w-full items-center">
+    <div className="border-2 border-orange-500 w-[95%] mx-auto flex flex-col items-center">
+      <div className="flex w-full items-center mb-[2%]">
         <Image
           src="/profilePicture.jpg"
           alt="Ezequiel Sarrugeri picture"
@@ -18,8 +18,8 @@ export default function Page() {
           priority={true}
           className="rounded-xl ml-[3%] mr-[2%]"
         />
-        <div className="flex flex-col border-4">
-          <p className="mb-[5%]">Hello! I'm Ezequiel.</p>
+        <div className="flex flex-col border-2">
+          <p className="mb-[3%] text-xl font-bold">Hello! I'm Ezequiel.</p>
           <div className="space-y-[2%] text-justify">
             <p>
               I'm a passionate and versatile professional with experience in
@@ -29,7 +29,7 @@ export default function Page() {
               My experience at{" "}
               <Link
                 href="https://soyhenry.com"
-                className="underline decoration-blue-500 underline-offset-4 font-semibold"
+                className="underline decoration-blue-500 underline-offset-4 font-semibold text-yellow-400"
               >
                 Henry Bootcamp
               </Link>{" "}
@@ -45,9 +45,35 @@ export default function Page() {
       <div
         className={`${
           showContact ? "block" : "hidden"
-        } w-[70%] text-green-600 border-4 border-gray-400 m-[1%] flex justify-center`}
+        } w-[95%] border-2 border-violet-500 m-[1%] flex flex-col justify-center space-y-[1%]`}
       >
-        Feel free to reach out to me at ezesarru@gmail.com
+        <p className="text-xl font-bold">Contact</p>
+        <p>
+          I had love to hear from you! Don't hesitate to contact me at{" "}
+          <Link
+            href="mailto:ezesarru@gmail.com"
+            className="underline decoration-blue-500 underline-offset-4 font-semibold  text-yellow-400"
+          >
+            ezesarru@gmail.com
+          </Link>{" "}
+        </p>
+
+        <p>
+          Or you can also find me on{" "}
+          <Link
+            href="https://github.com/ezesarru"
+            className="underline decoration-blue-500 underline-offset-4 font-semibold text-yellow-400"
+          >
+            GitHub
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="https://linkedin.com/in/ezesarru/"
+            className="underline decoration-blue-500- underline-offset-4 font-semibold  text-yellow-400"
+          >
+            LinkedIn
+          </Link>
+        </p>
       </div>
     </div>
   );

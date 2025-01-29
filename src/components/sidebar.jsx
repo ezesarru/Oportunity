@@ -1,16 +1,18 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import useStore from "../store";
 
-export default function Sidebar({ contactClick }) {
+export default function Sidebar() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const handleContact = useStore((state) => state.handleContact);
+  const showContact = useStore((state) => state.showContact);
 
   return (
-    <nav className="border-4 border-blue-600">
+    <nav className="border-2 border-blue-600">
       <h1 className="text-4xl font-bold mb-[10%]">
         Ezequiel
         <br />
@@ -30,6 +32,25 @@ export default function Sidebar({ contactClick }) {
           </Link>
         </li>
         <li>
+          <button
+            onClick={() => {
+              if (pathname !== "/") {
+                handleContact(true);
+                router.push("/");
+              } else {
+                handleContact();
+              }
+            }}
+            className={`${
+              showContact && pathname === "/"
+                ? "underline decoration-yellow-300 underline-offset-4 font-bold"
+                : ""
+            }`}
+          >
+            Contact
+          </button>
+        </li>
+        <li>
           <Link
             href="/blog"
             className={
@@ -42,17 +63,10 @@ export default function Sidebar({ contactClick }) {
           </Link>
         </li>
         <li>
-          <button
-            onClick={handleContact}
-            className="underline decoration-red-500 underline-offset-4 font-bold" //! Añadir CSS para que sea diferente
-          >
-            Contact
-          </button>
-        </li>
-        <li>
           <Link
-            className="underline decoration-red-500 underline-offset-4 font-bold"
+            className="hover:underline decoration-red-500 underline-offset-4 hover:font-bold "
             href="/resume.pdf"
+            target="_blank"
           >
             Resume
           </Link>
