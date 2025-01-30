@@ -67,7 +67,6 @@ export default function Sidebar() {
             className="hover:underline decoration-red-500 underline-offset-4 hover:font-bold "
             href="/resume.pdf"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Resume
           </a>

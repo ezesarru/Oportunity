@@ -13,8 +13,8 @@ export default function Page() {
         <Image
           src="/profilePicture.jpg"
           alt="Ezequiel Sarrugeri picture"
-          width={170}
-          height={160}
+          width={150}
+          height={200}
           priority={true}
           className="rounded-xl ml-[3%] mr-[2%]"
         />
