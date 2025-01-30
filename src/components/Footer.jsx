@@ -7,3 +7,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+//! example
