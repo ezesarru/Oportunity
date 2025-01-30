@@ -63,13 +63,14 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link
+          <a
             className="hover:underline decoration-red-500 underline-offset-4 hover:font-bold "
             href="/resume.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Resume
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

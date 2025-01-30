@@ -14,7 +14,7 @@ export default function Page() {
           src="/profilePicture.jpg"
           alt="Ezequiel Sarrugeri picture"
           width={170}
-          height={170}
+          height={160}
           priority={true}
           className="rounded-xl ml-[3%] mr-[2%]"
         />
