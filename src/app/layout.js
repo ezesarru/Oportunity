@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import Footer from "../components/Footerrrr";
-import Sidebar from "../components/Sidebarrrr";
+import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
 
 export const metadata = {
   title: "Oportunity",
