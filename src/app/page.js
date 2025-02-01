@@ -8,9 +8,9 @@ export default function Page() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <div className="border-2 border-orange-500 w-[95%] mx-auto flex flex-col items-center">
+    <div className="border-2 border-orange-500 mx-auto flex flex-col items-center">
       <div className="flex w-full items-center">
-        <div className="flex flex-col border-2">
+        <div className="flex flex-col border-2 ">
           <p className="mb-[3%] text-xl font-bold">Hello! I'm Ezequiel.</p>
           <div className="space-y-[2%] text-justify">
             <p>
@@ -37,17 +37,17 @@ export default function Page() {
           <Image
             src="/profilePicture.jpg"
             alt="Ezequiel Sarrugeri"
-            width={140}
+            width={170}
             height={186}
             priority={true}
-            className="rounded-xl ml-[2%] mr-[2%] grayscale hover:grayscale-0"
+            className="rounded-xl grayscale hover:grayscale-0"
           />
         </Link>
       </div>
       <div
         className={`${
           showContact ? "block" : "hidden"
-        } w-[95%] border-2 border-violet-500 m-[1%] flex flex-col justify-center space-y-[1%]`}
+        } w-[95%] border-2 border-violet-500 m-[2%] flex flex-col justify-center space-y-[1%]`}
       >
         <p className="text-xl font-bold">Contact</p>
         <p>

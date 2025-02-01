@@ -15,11 +15,15 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="">
-        <div className="border-2 border-red-500 my-[5%] w-[60%] mx-auto flex justify-center">
+        <div className="flex justify-center mx-auto my-[1%]">
           <Topbar />
+        </div>
+        <div className="border-2 border-red-500 max-w-3xl mx-auto flex justify-center">
           {children}
         </div>
-        <Footer />
+        <div className="my-[2%] mx-auto max-w-3xl">
+          <Footer />
+        </div>
       </body>
     </html>
   );

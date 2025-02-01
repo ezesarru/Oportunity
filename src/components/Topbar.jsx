@@ -13,12 +13,8 @@ export default function Sidebar() {
 
   return (
     <nav className="border-2 border-blue-600">
-      <h1 className="text-4xl font-bold mb-[10%]">
-        Ezequiel
-        <br />
-        Sarrugeri
-      </h1>
-      <ul className="flex flex-col gap-2 text-lg">
+      <h1 className="text-4xl font-bold">Ezequiel Sarrugeri</h1>
+      <ul className="flex flex-row gap-4 text-lg justify-center">
         <li>
           <Link
             href="/"
