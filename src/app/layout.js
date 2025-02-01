@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 
 export const metadata = {
-  title: "Oportunity",
+  title: "Ezequiel Sarrugeri",
   description: "By EzeSarru",
 };
 
