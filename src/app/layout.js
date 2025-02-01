@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import Topbar from "../components/Topbar";
 
 export const metadata = {
   title: "Ezequiel Sarrugeri",
@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>
+      <body className="">
         <div className="border-2 border-red-500 my-[5%] w-[60%] mx-auto flex justify-center">
-          <Sidebar />
+          <Topbar />
           {children}
         </div>
         <Footer />

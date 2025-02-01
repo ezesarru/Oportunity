@@ -9,15 +9,7 @@ export default function Page() {
 
   return (
     <div className="border-2 border-orange-500 w-[95%] mx-auto flex flex-col items-center">
-      <div className="flex w-full items-center mb-[2%]">
-        <Image
-          src="/profilePicture.jpg"
-          alt="Ezequiel Sarrugeri picture"
-          width={150}
-          height={200}
-          priority={true}
-          className="rounded-xl ml-[3%] mr-[2%]"
-        />
+      <div className="flex w-full items-center">
         <div className="flex flex-col border-2">
           <p className="mb-[3%] text-xl font-bold">Hello! I'm Ezequiel.</p>
           <div className="space-y-[2%] text-justify">
@@ -41,6 +33,16 @@ export default function Page() {
             </p>
           </div>
         </div>
+        <Link href={"https://www.linkedin.com/in/ezesarru/"} target="_blank">
+          <Image
+            src="/profilePicture.jpg"
+            alt="Ezequiel Sarrugeri"
+            width={140}
+            height={186}
+            priority={true}
+            className="rounded-xl ml-[2%] mr-[2%] grayscale hover:grayscale-0"
+          />
+        </Link>
       </div>
       <div
         className={`${
