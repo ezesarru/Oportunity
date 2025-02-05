@@ -42,7 +42,7 @@ export default function Page() {
               width={200}
               height={186}
               priority={true}
-              className="grayscale transition-all duration-700 ease-in-out hover:grayscale-0"
+              className="grayscale transition-all duration-500 ease-in-out hover:grayscale-0"
             />
           </Link>
         </div>
