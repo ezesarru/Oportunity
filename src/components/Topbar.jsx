@@ -21,7 +21,7 @@ export default function Sidebar() {
             className={
               pathname === "/"
                 ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
-                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }
           >
             About
@@ -40,7 +40,7 @@ export default function Sidebar() {
             className={`${
               showContact && pathname === "/"
                 ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
-                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }`}
           >
             Contact
@@ -52,7 +52,7 @@ export default function Sidebar() {
             className={
               pathname === "/blog"
                 ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
-                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }
           >
             Blog
@@ -60,7 +60,7 @@ export default function Sidebar() {
         </li>
         <li>
           <a
-            className="border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
+            className="border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             href="/resume.pdf"
             target="_blank"
           >

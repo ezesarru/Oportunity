@@ -18,10 +18,8 @@ export default function RootLayout({ children }) {
         <div className="mt-[1%] mb-[4%]">
           <Topbar />
         </div>
-        <div className="border-2 border-red-500 max-w-3xl mx-auto flex justify-center">
-          {children}
-        </div>
-        <div className="mt-[6%] mx-auto max-w-3xl">
+        <div className="max-w-3xl">{children}</div>
+        <div className="mt-[8%] mx-auto max-w-3xl">
           <Footer />
         </div>
       </body>

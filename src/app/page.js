@@ -8,24 +8,25 @@ export default function Page() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <div className="border-2 border-orange-500 mx-auto flex flex-col items-center">
+    <div>
       <div className="flex w-full items-center">
-        <div className="flex flex-col border-2 ">
-          <p className="mb-[3%] text-xl font-bold">Hello! I'm Ezequiel.</p>
-          <div className="space-y-[2%] text-justify">
+        <div className="">
+          <p className="mb-[2%] text-xl font-bold">About</p>
+          <div className="space-y-[1%]">
             <p>
-              I'm a passionate and versatile professional with experience in
-              Full Stack software development.
+              I'm a Full Stack software engineer. I'm originally from Lanús,
+              Buenos Aires, Argentina.
             </p>
             <p>
-              My experience at{" "}
+              I started my carreer at{" "}
               <Link
                 href="https://soyhenry.com"
-                className="underline decoration-blue-500 underline-offset-4 font-semibold text-yellow-400"
+                target="_blank"
+                className="border-b-2 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-white"
               >
                 Henry Bootcamp
               </Link>{" "}
-              gave me the opportunity to lead a team and build an e-commerce.
+              leading a team and building an e-commerce.
             </p>
             <p>
               I'm fluent in Spanish with intermediate English, that allows me to
@@ -33,28 +34,33 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <Link href={"https://www.linkedin.com/in/ezesarru/"} target="_blank">
-          <Image
-            src="/profilePicture.jpg"
-            alt="Ezequiel Sarrugeri"
-            width={170}
-            height={186}
-            priority={true}
-            className="rounded-xl grayscale hover:grayscale-0"
-          />
-        </Link>
+        <div className="ml-[2%] mt-[4%]">
+          <Link href={"https://www.linkedin.com/in/ezesarru/"} target="_blank">
+            <Image
+              src="/profilePicture.jpg"
+              alt="Ezequiel Sarrugeri"
+              width={200}
+              height={186}
+              priority={true}
+              className="grayscale transition-all duration-700 ease-in-out hover:grayscale-0"
+            />
+          </Link>
+        </div>
       </div>
       <div
-        className={`${
-          showContact ? "block" : "hidden"
-        } w-[95%] border-2 border-violet-500 m-[2%] flex flex-col justify-center space-y-[1%]`}
+        className={`transition-all duration-700 ease-in-out my-[4%] space-y-[1%] ${
+          showContact
+            ? "max-h-96"
+            : "max-h-0 opacity-0 scale-95 overflow-hidden"
+        }`}
       >
-        <p className="text-xl font-bold">Contact</p>
+        <p className="mb-[2%] text-xl font-bold">Contact</p>
         <p>
-          I had love to hear from you! Don't hesitate to contact me at{" "}
+          It would be great to hear from you! Contact me at{" "}
           <Link
-            href="mailto:ezesarru@gmail.com"
-            className="underline decoration-blue-500 underline-offset-4 font-semibold  text-yellow-400"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ezesarru@gmail.com"
+            target="_blank"
+            className="border-b-2 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-white"
           >
             ezesarru@gmail.com
           </Link>{" "}
@@ -64,17 +70,20 @@ export default function Page() {
           Or you can also find me on{" "}
           <Link
             href="https://github.com/ezesarru"
-            className="underline decoration-blue-500 underline-offset-4 font-semibold text-yellow-400"
+            target="_blank"
+            className="border-b-2 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-white"
           >
             GitHub
           </Link>{" "}
           and{" "}
           <Link
             href="https://linkedin.com/in/ezesarru/"
-            className="underline decoration-blue-500- underline-offset-4 font-semibold  text-yellow-400"
+            target="_blank"
+            className="border-b-2 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-white"
           >
             LinkedIn
           </Link>
+          .
         </p>
       </div>
     </div>
