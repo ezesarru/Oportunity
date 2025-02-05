@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex text-sm text-center text-gray-600 dark:text-white font-mono">
+    <footer className="flex text-xs text-center text-gray-600 dark:text-white font-mono">
       <div className="grow text-left">
         <p>ezesarru@gmail.com</p>
       </div>

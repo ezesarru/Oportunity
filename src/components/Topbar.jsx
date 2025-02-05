@@ -12,9 +12,9 @@ export default function Sidebar() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <div className="border-2 border-blue-600 flex justify-between items-center font-mono text-gray-600 dark:text-white">
+    <div className="flex justify-between font-mono text-gray-600 dark:text-white">
       <h1 className="text-lg font-bold">Ezequiel Sarrugeri</h1>
-      <ul className="flex flex-row gap-6 text-xs">
+      <ul className="flex flex-row gap-6 text-xs items-center">
         <li>
           <Link
             href="/"

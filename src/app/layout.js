@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="border max-w-screen-sm mx-auto mt-[2%]">
+      <body className="max-w-screen-sm mx-auto mt-[2%]">
         <div className="mt-[1%] mb-[4%]">
           <Topbar />
         </div>
