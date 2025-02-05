@@ -14,14 +14,14 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="">
-        <div className="flex justify-center mx-auto my-[1%]">
+      <body className="border max-w-screen-sm mx-auto mt-[2%]">
+        <div className="mt-[1%] mb-[4%]">
           <Topbar />
         </div>
         <div className="border-2 border-red-500 max-w-3xl mx-auto flex justify-center">
           {children}
         </div>
-        <div className="my-[2%] mx-auto max-w-3xl">
+        <div className="mt-[6%] mx-auto max-w-3xl">
           <Footer />
         </div>
       </body>

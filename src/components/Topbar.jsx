@@ -12,16 +12,16 @@ export default function Sidebar() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <nav className="border-2 border-blue-600">
-      <h1 className="text-4xl font-bold">Ezequiel Sarrugeri</h1>
-      <ul className="flex flex-row gap-4 text-lg justify-center">
+    <div className="border-2 border-blue-600 flex justify-between items-center font-mono text-gray-600 dark:text-white">
+      <h1 className="text-lg font-bold">Ezequiel Sarrugeri</h1>
+      <ul className="flex flex-row gap-6 text-xs">
         <li>
           <Link
             href="/"
             className={
               pathname === "/"
-                ? "underline decoration-yellow-300 underline-offset-4 font-bold"
-                : ""
+                ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }
           >
             About
@@ -39,8 +39,8 @@ export default function Sidebar() {
             }}
             className={`${
               showContact && pathname === "/"
-                ? "underline decoration-yellow-300 underline-offset-4 font-bold"
-                : ""
+                ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }`}
           >
             Contact
@@ -51,8 +51,8 @@ export default function Sidebar() {
             href="/blog"
             className={
               pathname === "/blog"
-                ? "underline decoration-yellow-300 underline-offset-4 font-bold"
-                : ""
+                ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
+                : "border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             }
           >
             Blog
@@ -60,7 +60,7 @@ export default function Sidebar() {
         </li>
         <li>
           <a
-            className="hover:underline decoration-red-500 underline-offset-4 hover:font-bold "
+            className="border-2 p-1 transition-[border-color] border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
             href="/resume.pdf"
             target="_blank"
           >
@@ -68,6 +68,6 @@ export default function Sidebar() {
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 }
