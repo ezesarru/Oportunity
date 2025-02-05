@@ -6,6 +6,12 @@ const useStore = create((set) => ({
     set((state) => ({
       showContact: value !== undefined ? value : !state.showContact,
     })),
+
+  showAnimation: false,
+  handleAnimation: (value) =>
+    set((state) => ({
+      showAnimation: value,
+    })),
 }));
 
 export default useStore;
