@@ -8,7 +8,7 @@ export default function Page() {
   const showContact = useStore((state) => state.showContact);
 
   return (
-    <div>
+    <div className="animate-fadeIn">
       <div className="flex w-full items-center">
         <div className="">
           <p className="mb-[2%] text-xl font-bold">About</p>

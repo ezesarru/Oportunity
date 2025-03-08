@@ -3,7 +3,6 @@
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import useStore from "../store";
-// import { useEffect } from "react";
 
 export default function Topbar() {
   const pathname = usePathname();
@@ -12,19 +11,8 @@ export default function Topbar() {
   const showContact = useStore((state) => state.showContact);
   const handleContact = useStore((state) => state.handleContact);
 
-  const showAnimation = useStore((state) => state.showAnimation);
-  const handleAnimation = useStore((state) => state.handleAnimation);
-
-  // useEffect(() => {
-  //   handleAnimation(true);
-  // }, [pathname]);
-
   return (
-    <div
-      className={`flex justify-between font-mono text-gray-600 dark:text-white transition-all duration-700 ${
-        showAnimation ? "animate-fadeIn" : ""
-      }`}
-    >
+    <div className="flex justify-between font-mono text-gray-600 dark:text-white transition-all duration-700">
       <h1 className="text-lg font-bold">Ezequiel Sarrugeri</h1>
       <ul className="flex flex-row gap-6 text-xs items-center">
         <li>
