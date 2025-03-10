@@ -11,7 +11,7 @@ export default function Page() {
     <div className="animate-fadeIn">
       <div className="flex w-full items-center">
         <div className="">
-          <p className="mb-[2%] text-xl font-bold">About</p>
+          <h1 className="mb-[2%] text-xl font-bold">About</h1>
           <div className="space-y-[1%]">
             <p>
               I'm a Full Stack software engineer. I'm originally from Lanús,
