@@ -3,7 +3,7 @@ export default function ThePowerOfNow() {
     <div className="items-center animate-fadeIn">
       <h1 className="text-xl font-bold">The Power Of Now</h1>
       <p className="text-xs font-mono">march 10, 2025</p>
-      <div className="mt-[2%] space-y-[1%]">
+      <div className="mt-[2%] space-y-[2%]">
         <p>
           It's the book that's transforming me. It explores about the path to
           spiritual realization and the journey of self-discovery.

@@ -37,11 +37,13 @@ export default function Topbar() {
                 handleContact();
               }
             }}
-            className={`${
-              showContact && pathname === "/"
-                ? "border-2 p-1 border-gray-600 dark:border-yellow-500"
-                : "border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
-            }`}
+            className={`border-2 p-1 transition-[border-color] duration-500 border-gray-300 
+              sm:hover:border-gray-600 dark:border-gray-500 sm:dark:hover:border-yellow-500
+              ${
+                showContact && pathname === "/"
+                  ? "border-gray-600 dark:border-yellow-500"
+                  : ""
+              }`}
           >
             Contact
           </button>
@@ -60,7 +62,7 @@ export default function Topbar() {
         </li>
         <li>
           <a
-            className="border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 dark:hover:border-yellow-500"
+            className="border-2 p-1 transition-[border-color] duration-500 border-gray-300  hover:border-gray-600  dark:border-gray-500 sm:dark:hover:border-yellow-500"
             href="/resume.pdf"
             target="_blank"
           >

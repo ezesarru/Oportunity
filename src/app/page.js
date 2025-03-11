@@ -12,7 +12,7 @@ export default function Page() {
       <div className="flex w-full items-center">
         <div className="">
           <h1 className="mb-[2%] text-xl font-bold">About</h1>
-          <div className="space-y-[1%]">
+          <div className="space-y-[2%]">
             <p>
               I'm a Full Stack software engineer. I'm originally from Lanús,
               Buenos Aires, Argentina.
@@ -42,13 +42,13 @@ export default function Page() {
               width={200}
               height={186}
               priority={true}
-              className="grayscale transition-all duration-500 ease-in-out hover:grayscale-0"
+              className="grayscale transition-all duration-500 ease-in-out hover:grayscale-0 hidden md:block"
             />
           </Link>
         </div>
       </div>
       <div
-        className={`transition-all duration-700 ease-in-out my-[4%] space-y-[1%] ${
+        className={`transition-all duration-700 ease-in-out my-[4%] space-y-[2%] ${
           showContact
             ? "max-h-96"
             : "max-h-0 opacity-0 scale-95 overflow-hidden"

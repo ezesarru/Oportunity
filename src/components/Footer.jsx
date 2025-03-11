@@ -5,9 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex text-xs text-center text-gray-600 dark:text-white font-mono">
-      <div className="grow text-left">
-        <p>ezesarru</p>
-      </div>
+      <p className="grow text-left">ezesarru</p>
       <div>
         <Link
           href="https://github.com/ezesarru/Oportunity"

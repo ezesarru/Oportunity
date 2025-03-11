@@ -3,7 +3,7 @@ export default function PrioritizeYourself() {
     <div className="items-center animate-fadeIn">
       <h1 className="text-xl font-bold">Prioritize Yourself</h1>
       <p className="text-xs font-mono">march 10, 2025</p>
-      <div className="mt-[2%] space-y-[1%]">
+      <div className="mt-[2%] space-y-[2%]">
         <p>
           Throughout my life, I have had the opportunity to learn about a wide
           variety of topics, each with its own richness and depth. However, if I
