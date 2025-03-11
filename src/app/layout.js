@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="mx-auto max-w-2xl mt-12 px-4">
+      <body className="mx-auto max-w-2xl mt-8 px-4">
         <div className="mb-[4%] animate-fadeIn">
           <Topbar />
         </div>

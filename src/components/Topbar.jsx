@@ -14,7 +14,7 @@ export default function Topbar() {
   return (
     <div className="flex justify-between font-mono text-gray-600 dark:text-white transition-all duration-700">
       <h1 className="text-lg font-bold">Ezequiel Sarrugeri</h1>
-      <ul className="flex flex-row gap-4 sm:gap-6 text-xs items-center">
+      <ul className="flex flex-row gap-3 sm:gap-6 text-xs items-center">
         <li>
           <Link
             href="/"
